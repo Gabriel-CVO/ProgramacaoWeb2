@@ -74,5 +74,4 @@ app.delete('/listas/:id', (req, res) => {
 })
 
 
-// Expor o objeto para outros módulos
 export default app
