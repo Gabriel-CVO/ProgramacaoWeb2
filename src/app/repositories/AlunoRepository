@@ -1,0 +1,29 @@
+import conexao from "../database/conexao.js";
+
+class AlunoRepository {
+    // Criar um novo elemento
+    create(){
+        const sql = "SELECT * FROM dbsenac.alunos;"
+        conexao.query(sql, (error,result)=>{
+            if (error) {
+                return error
+            } else {
+                return result
+            }
+        }) 
+    }
+
+    // buscar tudo
+    findAll(){}
+
+    // buscar por id
+    findById(){}
+
+    // atualizar
+    update(){}
+
+    // delete
+    delete(){}
+}
+
+export default new AlunoRepository()
